@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+
+<properties>
+	<comment>All Toyota Test Regions - For Selenium Automation!!</comment>
+
+	<entry key="Toyota.test1">
+		<loginurl>https://tcom_user:D0!pHiN$@test1.tcom.aws.toyota.com/</loginurl>
+		<url>https://test1.tcom.aws.toyota.com</url>
+		<username>tcom_user</username>
+		<password>D0!pHiN$</password>
+		<dcrurl>https://test1.tcom.aws.toyota.com/ToyotaSite/rest/lscs/getDocument?templatePath=</dcrurl>	
+	</entry>
+	
+	<entry key="Toyota.test2">
+		<loginurl>https://tcom_user:D0!pHiN$@test2.tcom.aws.toyota.com/</loginurl>
+		<url>https://test2.tcom.aws.toyota.com</url>
+		<username>tcom_user</username>
+		<password>D0!pHiN$</password>
+		<dcrurl>https://test2.tcom.aws.toyota.com/ToyotaSite/rest/lscs/getDocument?templatePath=</dcrurl>	
+	</entry>
+	
+	<entry key="Toyota.staging">
+		<loginurl>https://tcom_user:D0!pHiN$@staging.toyota.com/</loginurl>
+		<url>https://staging.toyota.com</url>
+		<username>tcom_user</username>
+		<password>D0!pHiN$</password>
+		<dcrurl>https://staging.toyota.com/ToyotaSite/rest/lscs/getDocument?templatePath=</dcrurl>	
+	</entry>
+	
+</properties>

@@ -1,0 +1,267 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.Toyota</groupId>
+	<artifactId>Toyota</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Toyota</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<suiteXmlFile>testng.xml</suiteXmlFile>
+		<skipTests>false</skipTests>
+		<value>utilities.TestOverride</value>
+		<threads>1</threads>
+		<sel-version>2.58</sel-version>
+	</properties>
+	<repositories>
+		<repository>
+			<id>java-net</id>
+			<url>http://download.java.net/maven/2</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>3.1</version>
+		</dependency>
+		<!-- <dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency> -->
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.9.8</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- <dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<version>4.1.1.4</version>
+		</dependency> -->
+		<dependency>
+			<groupId>org.uncommons</groupId>
+			<artifactId>reportng</artifactId>
+			<version>1.1.2</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.testng</groupId>
+					<artifactId>testng</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>3.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.4</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.8</version>
+		</dependency>
+		<!-- <dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>sqljdbc41</artifactId>
+			<version>4.1</version>
+		</dependency> -->
+
+		<!-- <dependency>
+			<groupId>com.github.genium-framework</groupId>
+			<artifactId>Appium-Support</artifactId>
+			<version>1.0.5</version>
+		</dependency> -->
+
+		<!-- Adding Selenium dependency -->
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.14</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sourceforge.jexcelapi</groupId>
+			<artifactId>jxl</artifactId>
+			<version>2.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.activation</groupId>
+			<artifactId>activation</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.3.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk15on</artifactId>
+			<version>1.48</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcpkix-jdk15on</artifactId>
+			<version>1.48</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.0</version>
+		</dependency>
+
+		<!-- <dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>3.4.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.seleniumhq.selenium</groupId>
+					<artifactId>selenium-java</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency> -->
+		<dependency>
+			<groupId>com.github.axet</groupId>
+			<artifactId>lookup</artifactId>
+			<version>0.2.15</version>
+		</dependency>
+		<!-- <dependency>
+            <groupId>org.sikuli</groupId>
+            <artifactId>sikuli-api</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sikulix</groupId>
+            <artifactId>sikulixapi</artifactId>
+            <version>1.1.0</version>
+        </dependency> -->
+        
+        <dependency>
+		    <groupId>com.jayway.jsonpath</groupId>
+		    <artifactId>json-path</artifactId>
+		    <version>2.4.0</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20190722</version>
+		</dependency>
+        
+	</dependencies>
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<executions>
+					<execution>
+						<id>default-testCompile</id>
+						<phase>test-compile</phase>
+						<goals>
+							<goal>testCompile</goal>
+						</goals>
+						<configuration>
+							<source>1.8</source>
+							<target>1.8</target>
+							<encoding>UTF-8</encoding>
+						</configuration>
+					</execution>
+					<execution>
+						<id>default-compile</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>compile</goal>
+						</goals>
+						<configuration>
+							<source>1.8</source>
+							<target>1.8</target>
+							<encoding>UTF-8</encoding>
+						</configuration>
+					</execution>
+				</executions>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.4.3</version>
+				<configuration>
+					<properties>
+						<property>
+							<name>usedefaultlisteners</name>
+							<value>false</value>
+						</property>
+					</properties>
+					<parallel>methods</parallel>
+					<threadCount>${threads}</threadCount>
+					<!-- You can specify a specific testng.xml file here -->
+					<!-- <suiteXmlFiles> <suiteXmlFile>src/test/resources/testng-sample.xml</suiteXmlFile> 
+						</suiteXmlFiles> -->
+					<!-- Or dynamically with something like '-DsuiteXmlFile=src/test/resources/testng-sample.xml' -->
+					<suiteXmlFiles>
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+					</suiteXmlFiles>
+					<!-- Build with '-DskipTests=true' to bypass test execution @ build 
+						time Default: false -->
+					<skipTests>${skipTests}</skipTests>
+					<testFailureIgnore>true</testFailureIgnore>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>  
