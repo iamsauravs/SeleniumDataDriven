@@ -7,7 +7,7 @@ import java.util.Date;
 
 
 public class Constants {
-	//PATH-File name
+	//PATH-File names
 	public static final String REPORT_SOURCE_PATH= "target"+File.separator+"surefire-reports"+File.separator+"html";
 	public static final String REPORT_ZIP_FILENAME = "Toyota.zip";
 	public static final String REPORT_ZIP_PATH = "ReportZip"+File.separator+REPORT_ZIP_FILENAME;
